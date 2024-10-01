@@ -8,7 +8,7 @@
     list-style: none;
 }
 body {
-    font-family: "Poppins", serif ;
+    font-family: "Poppins" ;
 }
 header{
     background-color: #14c3a2;
@@ -17,6 +17,7 @@ header{
     --verde: #14c3a2;
     --preto: #17181f;
     --verdedark: #314d4a;
+    --degrade-btn: linear-gradient( #daf3ea, #f7f4e8 );
 }
 .container{
     max-width: 1440px;
@@ -24,10 +25,13 @@ header{
     margin: 0 auto;
 }
 .btn-gradiente{
-    padding: 10px 25px;
-    color: white;
-    border: none;
-    cursor: pointer;
+    background-color: #678c99;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
 }
 nav{
     display: flex;
