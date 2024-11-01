@@ -29,13 +29,17 @@ header{
 .btn-login{
     padding: 10px 25px;
     color: var(--branco);
-    background-color:  var(--azul-verde);
-    border: 1px solid var(--preto);
+    background-color:  var(--verde);
+    border: 1px solid var(--branco);
     cursor: pointer;
     border-radius: 10px;
+    transition: background-color .5s
 }
 .btn-login:hover{
-    background-color: var(--azul-marinho);
+
+    background-color: var(--branco);
+    border: 1px solid var(--branco);
+    color: var(--verde);
 }
 nav{
     display: flex;
@@ -43,10 +47,10 @@ nav{
     align-items: center;
     padding: 20px;
 }
-.logo{
-    font-size: 30px;
+.logo p{
+    font-size: 50px;
     font-weight: bold;
-    color: var(--azul-verde);
+    color: var(--azul-marinho);
 }
 ul{
     display: flex;
@@ -59,7 +63,12 @@ ul li{
 ul li a{
     color: white;
 }
-
+ul li a p{
+    transition: color 1s;
+}
+ul li a p:hover{
+    color: var(--azul-marinho);
+}
 .container{
     max-width: 640px;
     margin: 50px auto;
