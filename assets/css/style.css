@@ -52,35 +52,58 @@ nav{
     font-weight: bold;
     color: var(--azul-marinho);
 }
-ul{
+header ul{
     display: flex;
     align-items: center;
 }
-ul li{
+header ul li{
     margin: 0 35px;
     font-size: 15px;
 }
-ul li a{
+header ul li a{
     color: white;
 }
-ul li a p{
+header ul li a p{
     transition: color 1s;
 }
-ul li a p:hover{
+header ul li a p:hover{
     color: var(--azul-marinho);
 }
 .container{
-    max-width: 640px;
+    width: 40%;
+    height: 600px;
     margin: 50px auto;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
 }
+.container ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.container li{
+    display: block;
+    list-style-type: none;
+    margin: 0;
+
+    box-sizing: border-box;
+    height: 50px;
+}
+
+.container li:nth-child(1n+1) {
+    float: left;
+    width: 25%;
+
+}
+
 
 footer{
     bottom: 0;
     position: fixed;
-    height: 60px;
+    height:150px;
     width: 100%;
     text-align: center;
     background-color: var(--verde);
