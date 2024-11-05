@@ -69,6 +69,7 @@ header ul li a p{
 header ul li a p:hover{
     color: var(--azul-marinho);
 }
+
 .container{
     width: 40%;
     height: 600px;
@@ -92,13 +93,11 @@ header ul li a p:hover{
     box-sizing: border-box;
     height: 50px;
 }
-
 .container li:nth-child(1n+1) {
     float: left;
     width: 25%;
 
 }
-
 
 footer{
     bottom: 0;
