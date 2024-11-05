@@ -71,7 +71,7 @@ header ul li a p:hover{
 }
 .container{
     width: 40%;
-    height: 600px;
+    height: 6000px;
     margin: 50px auto;
     background: #fff;
     padding: 20px;
@@ -102,7 +102,7 @@ header ul li a p:hover{
 
 footer{
     bottom: 0;
-    position: fixed;
+
     height:150px;
     width: 100%;
     text-align: center;
