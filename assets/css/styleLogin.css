@@ -236,13 +236,13 @@ input:-webkit-autofill
 
     z-index: -1;
     position: relative;
-    animation: deslocamentoEsq 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+    animation: deslocamentoEsq 1s; /*MODIFIQUEI DE 3s PARA 1.3s*/
 }
 
 .sign-up-js .second-content .second-column {
     position: relative;
     z-index: -1;
-    animation: deslocamentoDir 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+    animation: deslocamentoDir 1s; /*MODIFIQUEI DE 3s PARA 1.3s*/
 }
 
 /*ANIMAÇÃOO CSS PARA O CONTEÚDO*/
@@ -253,18 +253,6 @@ input:-webkit-autofill
         left: 0;
         opacity: 1;
         z-index: 12;
-    }
-
-    25% {
-        left: -80px;
-        opacity: .5;
-        /* z-index: 12; NÃO HÁ NECESSIDADE */
-    }
-
-    50% {
-        left: -100px;
-        opacity: .2;
-        /* z-index: 12; NÃO HÁ NECESSIDADE */
     }
 
     to {
@@ -279,22 +267,13 @@ input:-webkit-autofill
 
     from {
         left: 0;
+        opacity: 1;
         z-index: 12;
-    }
-
-    25% {
-        left: 80px;
-        /* z-index: 12;  NÃO HÁ NECESSIDADE*/
-    }
-
-    50% {
-        left: 100px;
-        /* z-index: 12; NÃO HÁ NECESSIDADE*/
-        /* background-color: yellow;  Exemplo que dei no vídeo*/
     }
 
     to {
         left: 110px;
+        opacity: 0;
         z-index: -1;
     }
 }
@@ -308,18 +287,7 @@ input:-webkit-autofill
         left: 0;
         width: 40%;
     }
-    25% {
-        left: 5%;
-        width: 50%;
-    }
-    50% {
-        left: 25%;
-        width: 60%;
-    }
-    75% {
-        left: 45%;
-        width: 50%;
-    }
+
     to {
         left: 60%;
         width: 40%;
@@ -331,21 +299,6 @@ input:-webkit-autofill
     from {
         left: 60%;
         width: 40%;
-    }
-
-    25% {
-        left: 45%;
-        width: 50%;
-    }
-
-    50% {
-        left: 25%;
-        width: 60%;
-    }
-
-    75% {
-        left: 5%;
-        width: 50%;
     }
 
     to {
@@ -397,18 +350,6 @@ input:-webkit-autofill
             z-index: 12;
         }
 
-        25% {
-            top: -80px;
-            opacity: .5;
-            /* z-index: 12; NÃO HÁ NECESSIDADE */
-        }
-
-        50% {
-            top: -100px;
-            opacity: .2;
-            /* z-index: 12; NÃO HÁ NECESSIDADE */
-        }
-
         to {
             top: -110px;
             opacity: 0;
@@ -421,22 +362,13 @@ input:-webkit-autofill
 
         from {
             top: 0;
+            opacity: 1;
             z-index: 12;
-        }
-
-        25% {
-            top: 80px;
-            /* z-index: 12;  NÃO HÁ NECESSIDADE*/
-        }
-
-        50% {
-            top: 100px;
-            /* z-index: 12; NÃO HÁ NECESSIDADE*/
-            /* background-color: yellow;  Exemplo que dei no vídeo*/
         }
 
         to {
             top: 110px;
+            opacity: 0;
             z-index: -1;
         }
     }
@@ -450,21 +382,6 @@ input:-webkit-autofill
             height: 40%;
         }
 
-        25% {
-            top: 5%;
-            height: 50%;
-        }
-
-        50% {
-            top: 25%;
-            height: 60%;
-        }
-
-        75% {
-            top: 45%;
-            height: 50%;
-        }
-
         to {
             top: 60%;
             height: 40%;
@@ -476,21 +393,6 @@ input:-webkit-autofill
         from {
             top: 60%;
             height: 40%;
-        }
-
-        25% {
-            top: 45%;
-            height: 50%;
-        }
-
-        50% {
-            top: 25%;
-            height: 60%;
-        }
-
-        75% {
-            top: 5%;
-            height: 50%;
         }
 
         to {
