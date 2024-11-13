@@ -15,7 +15,7 @@
 }
 
 body{
-    height: 100vh;
+    height: 145vh;
     background-color: var(--branco);
     color: rgb(103, 103, 103);
     max-width: 1300px;
