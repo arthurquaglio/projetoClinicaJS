@@ -114,37 +114,71 @@ header{
 
 /*Main*/
 .container{
-    width:60%;
-    height: 500px;
+    width: 90%;
+    height: 80vh;
     margin: 50px auto;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
+    /*display: flex;*/
 }
-.container ul{
+.texts{
+    float: left;
+    margin: 10px;
+    width: 620px;
+    height: 80vh;
+}
+.texts h1{
+    width: 620px;
+    height: 10%;
+    font-size: 40px;
+
+}
+.consultas{
+    height: 40%;
+    width: 600px;
     position: relative;
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
+
 }
 .container li{
     display: block;
     list-style-type: none;
     margin: 0;
-
     box-sizing: border-box;
     height: 50px;
 }
 .container li:nth-child(1n+1) {
     float: left;
-    width: 25%;
+    width: 32%;
 
+}
+
+article{
+    float: left;
+}
+
+.image {
+    float: left ;
+    width: 450px;
+    height: 550px;
+    transition: 0.3s all;
+    z-index: 1;
+
+}
+
+.image:hover {
+    width: 490px;
+    height: 605px;
+    transform: rotate(10deg);
+    transition: 0.3s all;
 }
 
 /*Footer*/
 
 footer{
+    float: left;
     padding: 10px 0 10px 0;
     display: flex;
     justify-content: space-between;
