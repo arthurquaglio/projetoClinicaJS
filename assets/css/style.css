@@ -120,13 +120,12 @@ header{
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    /*display: flex;*/
 }
 .texts{
     float: left;
     margin: 10px;
     width: 620px;
-    height: 80vh;
+    height: 70vh;
 }
 .texts h1{
     width: 620px;
@@ -134,26 +133,53 @@ header{
     font-size: 40px;
 
 }
-.consultas{
-    height: 40%;
-    width: 600px;
-    position: relative;
-    margin: 0;
-    padding: 0;
+.texts p{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+}
+.button-reservar{
+    margin: 20px 34.5%;
+    padding: 4px 40px 4px 40px;
+    color: var(--verde);
+    background-color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: solid 2px var(--verde);
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.button-reservar:hover {
+    margin: 20px 34.5%;
+    padding: 4px 40px 4px 40px;
+    background-color: var(--verde);
+    border: solid 2px var(--verde);
+    color: #ffffff;
+    transition: 0.3s all;
+}
 
-}
-.container li{
-    display: block;
-    list-style-type: none;
-    margin: 0;
-    box-sizing: border-box;
-    height: 50px;
-}
-.container li:nth-child(1n+1) {
-    float: left;
-    width: 32%;
+/*.consultas{*/
+/*    height: 40%;*/
+/*    width: 600px;*/
+/*    position: relative;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
 
-}
+/*}*/
+/*.container li{*/
+/*    display: block;*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    box-sizing: border-box;*/
+/*    height: 50px;*/
+/*}*/
+/*.container li:nth-child(1n+1) {*/
+/*    float: left;*/
+/*    width: 32%;*/
+
+/*}*/
 
 article{
     float: left;
