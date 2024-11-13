@@ -21,6 +21,7 @@ body{
     max-width: 1300px;
     margin: 1.8rem auto;
     padding: 0;
+    font-family: "Poppins", "sans-serif";
 }
 
 /*topo ________________________________________________________________________________*/
@@ -38,22 +39,19 @@ header{
     /*border-radius: 20px;*/
 }
 
-
-.title_1{
-    font-family: "Poppins", sans-serif;
+.subtitle_1{
     font-size: 52px;
     font-weight: 700;
     font-style: normal;
 }
 
-.title_2 {
-    font-family: "Poppins", sans-serif;
+.subtitle_2 {
     font-size: 46px;
     font-weight: 500;
     font-style: normal;
 }
 
-.aa {
+.nav-menus {
     margin: 0;
     padding: 10px 0 10px 0;
     display: flex;
@@ -65,7 +63,8 @@ header{
     background-color: var(--verde);
 
 }
-.aa2 {
+
+.menus {
     margin-left: 70px;
     display: flex;
     justify-content: space-between;
@@ -73,11 +72,10 @@ header{
     align-items: center;
 }
 
-.bot_1 , .bot_2, .bot_3 {
+.buttons {
     padding: 4px 45px 4px 45px;
     color: var(--branco);
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
     font-size: 25px;
     font-weight: 500;
     font-style: normal;
@@ -87,19 +85,18 @@ header{
     cursor: pointer;
 }
 
-.bot_1:hover, .bot_2:hover,.bot_3:hover {
+.buttons:hover {
     background-color: var(--branco);
     color: var(--verde);
     transition: 0.5s all;
 }
 
-.btn_lgn {
+.button_login {
     margin: 15px 80px 0 0;
     padding: 4px 40px 4px 40px;
     color: var(--branco);
     background-color: var(--verde);
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
     font-size: 25px;
     font-weight: 500;
     font-style: normal;
@@ -108,7 +105,7 @@ header{
     transition: 0.3s all;
 }
 
-.btn_lgn:hover {
+.button_login:hover {
     margin: 15px 80px 0 0;
     padding: 4px 40px 4px 40px;
     background-color: var(--branco);
@@ -119,7 +116,7 @@ header{
 
 /* main_______________________________________________________________________________________*/
 
-.corpin {
+.main {
     width: 100vh;
     height: 90vh;
     box-sizing: border-box;
@@ -130,7 +127,7 @@ header{
     justify-content: space-between;
 }
 
-.textos {
+.texts {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,8 +135,6 @@ header{
 
 h2 {
     font-size: 60px;
-
-    font-family: "Poppins", sans-serif;
     font-style: italic;
     line-height: 4.5rem;
     text-align: center
@@ -156,12 +151,11 @@ hr {
     border-radius: 2px;
 }
 
-.textin {
+.paragraph {
     margin-top: 2rem;
     line-height: 30px;
     max-width: 500px;
     text-indent: 30px;
-    font-family: "Poppins", sans-serif;
     font-size: 25px;
     font-weight: 400;
     font-style: normal;
@@ -169,17 +163,16 @@ hr {
 }
 
 article{
-
     width: 100px;
 }
 
-.imagem {
+.image {
     width: 450px;
     height: 550px;
     transition: 0.3s all;
 }
 
-.imagem:hover {
+.image:hover {
     width: 520px;
     height: 650px;
     transform: rotate(10deg);
