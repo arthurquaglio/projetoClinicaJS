@@ -40,7 +40,7 @@
                 </ul>
             </div><!-- social media -->
             <p class="description description-second">ou use seu e-mail para se registrar:</p>
-            <form class="form">
+            <form id="form-cadastro" class="form">
                 <label class="label-input">
                     <i class="far fa-user icon-modify"></i>
                     <input type="text" placeholder="Nome"  id="nome">
@@ -56,8 +56,7 @@
                     <input type="password" placeholder="Senha" id="senha">
                 </label>
 
-
-                <button class="btn btn-second">cadastrar</button>
+                <button type="submit" class="btn btn-second">cadastrar</button>
             </form>
         </div><!-- second column -->
     </div><!-- first content -->
@@ -90,24 +89,40 @@
                 </ul>
             </div><!-- social media -->
             <p class="description description-second">ou use seu e-mail para entrar:</p>
-            <form class="form">
-
+            <form class="form" id="form-login">
                 <label class="label-input">
                     <i class="far fa-envelope icon-modify"></i>
-                    <input type="email" placeholder="Email">
+                    <input type="email" placeholder="Email" id="email-login">
                 </label>
 
                 <label class="label-input">
                     <i class="fas fa-lock icon-modify"></i>
-                    <input type="password" placeholder="Senha">
+                    <input type="password" placeholder="Senha" id="senha-login">
                 </label>
 
                 <a class="password" href="#">esqueceu a senha?</a>
-                <button class="btn btn-second">entrar</button>
+                <button type="submit" class="btn btn-second">entrar</button>
             </form>
         </div><!-- second column -->
     </div><!-- second-content -->
 </div>
-<script src="assets/js/login.js"></script>
+<script>
+    // FRONT END
+    const btnSignin = document.querySelector("#signin");
+    const btnSignup = document.querySelector("#signup");
+
+    const body = document.querySelector("body");
+
+
+    btnSignin.addEventListener("click", function () {
+        body.className = "sign-in-js";
+    });
+
+    btnSignup.addEventListener("click", function () {
+        body.className = "sign-up-js";
+    })
+</script>
+<script src="assets/js/cadastroCliente.js"></script>
+<script src="assets/js/loginCliente.js"></script>
 </body>
 </html>
