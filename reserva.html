@@ -2,9 +2,47 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Reservas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </head>
 <body>
+<h2>Reservar Consulta</h2>
+<form id="formReserva">
+    <label for="tipoConsulta">Tipo de Consulta:</label>
+    <select id="tipoConsulta" required>
+        <option value="Consulta Geral">Consulta Geral</option>
+        <option value="Consulta Especializada">Consulta Especializada</option>
+        <option value="Retorno">Retorno</option>
+    </select>
 
+    <label for="dataReserva">Data da Reserva:</label>
+    <input type="text" id="dataReserva" class="flatpickr" required>
+
+    <label for="horario">Horário:</label>
+    <select id="horario" required>
+        <!-- Os horários serão preenchidos dinamicamente -->
+    </select>
+
+    <button type="submit">Reservar</button>
+</form>
+
+<h2>Minhas Reservas</h2>
+<ul id="minhasReservas">
+    <!-- Lista de reservas será preenchida dinamicamente -->
+</ul>
+
+<script src="assets/js/reservas.js"></script>
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        flatpickr('#dataReserva', {
+            dateFormat: 'd-m-Y',
+            minDate: 'today',
+            locale: 'pt'
+        });
+    });
+</script>
 </body>
 </html>

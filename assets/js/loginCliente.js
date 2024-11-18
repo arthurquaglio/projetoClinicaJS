@@ -13,9 +13,20 @@ document.getElementById('form-login').addEventListener('submit', function(event)
     console.log(usuarioValido);
 
     if (usuarioValido) {
+        const token = gerarToken();
+        const tokenUsuario = {
+            email: usuarioValido.email,
+            tipo: usuarioValido.tipo,
+            token: token
+        };
+        localStorage.setItem('tokenUsuario', JSON.stringify(tokenUsuario));
         alert(`Bem-vindo, ${usuarioValido.nome}!`);
-        window.location.href = '../projetoClinicaJS/index.html'; // Redirecionar para a página desejada
+        window.location.href = '../projetoClinicaJS/reserva.html'; // Redirecionar para a página desejada
     } else {
         alert('Email ou senha incorretos.');
+    }
+
+    function gerarToken() {
+        return Math.random().toString(36).substr(2) + Date.now().toString(36);
     }
 });
