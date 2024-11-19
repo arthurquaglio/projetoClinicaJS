@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    Conecta um arquivo CSS externo para estilização da página.-->
     <link rel="stylesheet" href="assets/css/styleAbout.css">
     <title>Clinica Médica</title>
 </head>
 <body>
+<!--Representa a seção de cabeçalho da página, normalmente usada para navegação e identidade visual.-->
+<!--Define uma área de navegação.-->
+<!--<ul>: Lista não ordenada usada para os itens do menu de navegação.-->
+<!--<li>: Cada item da lista representa um link ou botão de navegação.-->
+<!--onclick="scrollToFooter()": Chama uma função JavaScript que faz a rolagem suave até o rodapé da página quando o link "Contact" é clicado.-->
     <header>
         <nav>
             <div class="title">
@@ -19,26 +25,35 @@
                     <li> <a href= "about.html" class="buttons"> About </a> </li>
                     <li> <a onclick="scrollToFooter()" class="buttons"> Contact</a> </li>
                 </div>
-
                 <li> <a href= "login.html"> <button class="button_login">Login</button> </a> </li>
             </ul>
         </nav>
     </header>
 
+<!--<main>: Representa o conteúdo principal da página.-->
+<!--<div class="texts">: Contém os elementos de texto principais, como cabeçalhos e parágrafos.-->
+<!--<h2>: Cabeçalhos de segundo nível-->
+<!--<hr>: Insere uma linha horizontal para dividir visualmente as seções.-->
+<!--<p> parágrafo de introdução sobre a clínica.-->
     <main class="main">
-        <div class="texts">
-            <h2><span>Seja Bem-Vindo</span></h2>
+            <div class="texts">
+                    <h2><span>Seja Bem-Vindo</span></h2>
             <h2>A Clínica A.V.G.O</h2>
-            <hr>
+                <hr>
             <p class="paragraph">
                 A A.V.G.O é sinônimo de excelência em saúde. Nossa equipe, composta por médicos renomados e altamente especializados, está sempre atualizada com as últimas novidades da medicina. Oferecemos um portfólio completo de serviços, desde consultas preventivas até tratamentos complexos, garantindo o diagnóstico preciso e o tratamento mais eficaz para cada caso.
             </p>
         </div>
 
+<!--<article>:Uma seção autônoma que pode conter conteúdo independente. Aqui, é usada para a imagem.-->
+<!--<img>: Exibe uma imagem com caminho especificado e um texto alternativo (alt) para acessibilidade.-->
         <article>
             <img src="assets/util/medicaMascara.png" alt="mulher-roxa" class="image">
         </article>
     </main>
+
+<!--<footer>: Representa o rodapé da página, contendo informações como contatos e nomes relevantes.-->
+<!--<ul class="grupo"> e <ul class="contatos">: Listas de nomes e contatos.-->
     <footer id="footer">
         <ul class="grupo">
             <li>Arthur</li>
@@ -59,6 +74,9 @@
     </footer>
 
 </body>
+
+<!--<script>: Define um bloco de código JavaScript.-->
+<!--function scrollToFooter(): Função que rola a página suavemente até o elemento com id="footer" quando chamada.-->
 <script>
     function scrollToFooter() {
         document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
