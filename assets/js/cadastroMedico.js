@@ -16,6 +16,7 @@ function cadastrarMedico(nome, email, senha, especialidade) {
     console.log(`Médico ${nome} cadastrado com sucesso!`);
 }
 
-// Exemplo de chamadas da função para cadastrar médicos manualmente.
+// Chamadas da função para cadastrar médicos manualmente.
 cadastrarMedico('Dr. João Silva', 'joao@clinica.com', 'senha123', 'Cardiologia');
 cadastrarMedico('Dra. Maria Oliveira', 'maria@clinica.com', 'senha123', 'Dermatologia');
+// Precisa Cadastrar mais medicossss um para cada especialidade.

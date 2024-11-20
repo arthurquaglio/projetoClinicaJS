@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "Obstetricia": ["09:00", "10:00", "11:00", "15:00", "16:00"],
         "Dermatologia": ["09:00", "10:00", "11:00", "15:00", "16:00"],
         "Ortopedia": ["09:00", "10:00", "11:00", "15:00", "16:00"],
-        // Adicione mais tipos de consultas e horários conforme necessário
+        // Precisamos colocar mais especialidades e mais horários.
     };
     console.log(horariosLivres["Oftalmologia"]); // Exibe os horários de 'Oftalmologia' no console para verificação
 
