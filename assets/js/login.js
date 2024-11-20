@@ -31,7 +31,7 @@ document.getElementById('form-login').addEventListener('submit', function(event)
 
         // Exibe uma mensagem de sucesso e redireciona para a página específica de médicos
         alert(`Login de médico bem-sucedido!`);
-        window.location.href = '../projetoClinicaJS/reservaMedico.html'; // Página exclusiva para médicos
+        window.location.href = '../reservaMedico.html'; // Página exclusiva para médicos
         return; // Interrompe a execução da função após o login bem-sucedido do médico
     }
 
