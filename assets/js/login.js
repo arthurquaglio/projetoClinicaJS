@@ -56,7 +56,7 @@ document.getElementById('form-login').addEventListener('submit', function(event)
 
         // Exibe uma mensagem de boas-vindas e redireciona para a página de reservas de usuários
         alert(`Bem-vindo, ${usuarioValido.nome}!`);
-        window.location.href = '../projetoClinicaJS/reserva.html'; // Redireciona para a página de reservas
+        window.location.href = '../reserva.html'; // Redireciona para a página de reservas
     } else {
         // Exibe uma mensagem de erro se o email ou senha estiverem incorretos
         alert('Email ou senha incorretos.');
