@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--    Conecta um arquivo CSS externo para estilização da página.-->
     <link rel="stylesheet" href="assets/css/styleAbout.css">
-    <title>Clinica Médica</title>
+    <title>+life</title>
+    <link rel="shortcut icon" type="imagex/png" href="assets/util/coracao1.ico">
+    <script src="https://kit.fontawesome.com/62a22bf4de.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<!--Representa a seção de cabeçalho da página, normalmente usada para navegação e identidade visual.-->
-<!--Define uma área de navegação.-->
-<!--<ul>: Lista não ordenada usada para os itens do menu de navegação.-->
-<!--<li>: Cada item da lista representa um link ou botão de navegação.-->
-<!--onclick="scrollToFooter()": Chama uma função JavaScript que faz a rolagem suave até o rodapé da página quando o link "Contact" é clicado.-->
     <header>
         <nav>
             <div class="title">
@@ -30,11 +27,6 @@
         </nav>
     </header>
 
-<!--<main>: Representa o conteúdo principal da página.-->
-<!--<div class="texts">: Contém os elementos de texto principais, como cabeçalhos e parágrafos.-->
-<!--<h2>: Cabeçalhos de segundo nível-->
-<!--<hr>: Insere uma linha horizontal para dividir visualmente as seções.-->
-<!--<p> parágrafo de introdução sobre a clínica.-->
     <main class="main">
             <div class="texts">
                     <h2><span>Seja Bem-Vindo</span></h2>
@@ -52,31 +44,79 @@
         </article>
     </main>
 
-<!--<footer>: Representa o rodapé da página, contendo informações como contatos e nomes relevantes.-->
-<!--<ul class="grupo"> e <ul class="contatos">: Listas de nomes e contatos.-->
-    <footer id="footer">
-        <ul class="grupo">
-            <li>Arthur</li>
-            <li>Victor</li>
-            <li>Gustavo</li>
-            <li>Gabriel</li>
-            <li>Omar</li>
-            <li>Vinicius</li>
+<footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h1>+life</h1>
+            <p>Isso é tudo para sua saúde!</p>
+
+            <div id="footer_social_media"></div>
+            <a href="#" class="footer_link" id="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#" class="footer_link" id="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" class="footer_link" id="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+        <ul class="footer_list">
+            <li>
+                <h3>Linguagens</h3>
+            </li>
+            <li>
+                <p  class="footer-texts">JavaScript</p>
+            </li>
+            <li>
+                <p  class="footer-texts">HTML</p>
+            </li>
+            <li>
+                <p  class="footer-texts">CSS</p>
+            </li>
         </ul>
-        <ul class="contatos">
-            <li>Endereço</li>
-            <li>Email</li>
-            <li>numero</li>
-            <li>insta</li>
-            <li>face</li>
-            <li>Linkedin</li>
+
+        <ul class="footer_list">
+            <li>
+                <h3>Participantes</h3>
+            </li>
+            <li>
+                <p class="footer-texts">Arthur Augusto</p>
+            </li>
+            <li>
+                <p class="footer-texts">Gabriel Roberto</p>
+            </li>
+            <li>
+                <p class="footer-texts">Victor Neves</p>
+            </li>
         </ul>
-    </footer>
+
+        <div id="footer_subscribe">
+            <h3>Inscreva-se</h3>
+
+            <p>
+                Coloque seu e-mail para ser notificado de novas notícias
+            </p>
+
+            <div id="input_group">
+                <label>
+                    <input type="email" id="email">
+                </label>
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</footer>
 
 </body>
 
-<!--<script>: Define um bloco de código JavaScript.-->
-<!--function scrollToFooter(): Função que rola a página suavemente até o elemento com id="footer" quando chamada.-->
 <script>
     function scrollToFooter() {
         document.getElementById("footer").scrollIntoView({ behavior: "smooth" });

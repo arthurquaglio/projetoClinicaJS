@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>A.V.G.O</title>
+    <title>+life</title>
+    <link rel="shortcut icon" type="imagex/png" href="assets/util/coracao1.ico">
+
+    <script src="https://kit.fontawesome.com/62a22bf4de.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 <!--header-->
     <header>
         <nav>
             <div class="title">
-                <h1 class="subtitle_1">A.V.G.O</h1>
+                <h1 class="subtitle_1">+life</h1>
                 <h1 class="subtitle_2">Clínica</h1>
             </div>
             <ul class="nav-menus">
@@ -29,7 +33,7 @@
     <div class="container">
         <div class="texts">
             <h1>Consultas Disponíveis</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet bibendum libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla facilisi. Aenean mattis nibh ut vulputate congue. Donec pharetra cursus nisl, eu ultrices massa rhoncus ac. Fusce malesuada suscipit elit sed pretium. In pretium dapibus nulla, a viverra nunc. Mauris velit massa, aliquet laoreet ante nec, congue scelerisque risus. Donec congue mauris sit amet rhoncus sagittis.Phasellus egestas eu nisl vel vulputate. Vestibulum mollis turpis ut mauris tempus tristique. Duis tristique fringilla quam, nec tincidunt tellus molestie nec. Fusce condimentum blandit velit. Nulla rutrum urna massa, eu pharetra libero lacinia in. Interdum et malesuada fames
+            <p>Na Clínica +life, estamos comprometidos em oferecer um atendimento médico de excelência, com uma ampla gama de especialidades para atender às suas necessidades de saúde. Nossa equipe de profissionais altamente qualificados está pronta para proporcionar cuidados personalizados e humanizados, sempre com foco no bem-estar dos nossos pacientes.
             </p>
             <a href="reserva.html" class="button-reservar">Reservar</a>
         </div>
@@ -40,25 +44,79 @@
         </article>
     </div>
 <!--footer-->
-    <footer id="footer">
-        <ul class="grupo">
-            <li>Arthur</li>
-            <li>Victor</li>
-            <li>Gustavo</li>
-            <li>Gabriel</li>
-            <li>Omar</li>
-            <li>Vinicius</li>
+<footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h1>+life</h1>
+            <p>Isso é tudo para sua saúde!</p>
+
+            <div id="footer_social_media"></div>
+            <a href="#" class="footer_link" id="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#" class="footer_link" id="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" class="footer_link" id="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+        <ul class="footer_list">
+            <li>
+                <h3>Linguagens</h3>
+            </li>
+            <li>
+                <p  class="footer-texts">JavaScript</p>
+            </li>
+            <li>
+                <p  class="footer-texts">HTML</p>
+            </li>
+            <li>
+                <p  class="footer-texts">CSS</p>
+            </li>
         </ul>
-        <ul class="contatos">
-            <li>Endereço</li>
-            <li>Email</li>
-            <li>numero</li>
-            <li>insta</li>
-            <li>face</li>
-            <li>Linkedin</li>
+
+        <ul class="footer_list">
+            <li>
+                <h3>Participantes</h3>
+            </li>
+            <li>
+                <p class="footer-texts">Arthur Augusto</p>
+            </li>
+            <li>
+                <p class="footer-texts">Gabriel Roberto</p>
+            </li>
+            <li>
+                <p class="footer-texts">Victor Neves</p>
+            </li>
         </ul>
-    </footer>
+
+        <div id="footer_subscribe">
+            <h3>Inscreva-se</h3>
+
+            <p>
+                Coloque seu e-mail para ser notificado de novas notícias
+            </p>
+
+            <div id="input_group">
+                <label>
+                    <input type="email" id="email">
+                </label>
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
 </body>
+
 <script>
     function scrollToFooter() {
         document.getElementById("footer").scrollIntoView({ behavior: "smooth" });

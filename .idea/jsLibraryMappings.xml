@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{all, flatpickr}" />
+    <file url="PROJECT" libraries="{62a22bf4de, all, flatpickr}" />
     <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>
