@@ -27,9 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Filtra as reservas que correspondem ao médico logado
         const reservasMedico = reservas.filter(reserva => reserva.medico === medicoLogado.nome);
 
-        // Log para debug: exibe todas as reservas e as reservas filtradas no console
-        console.log(reservas);
-        console.log(reservasMedico);
 
         // Obtém o elemento do DOM onde as reservas serão exibidas
         const reservasContainer = document.getElementById('reservasMedico');
