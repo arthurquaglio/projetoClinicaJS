@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const reservasContainer = document.getElementById('reservasMedico');
         reservasContainer.innerHTML = ''; // Limpa o conteúdo atual do contêiner
 
-        // Itera sobre cada reserva do médico para criar elementos de exibição
+        // Passa sobre cada reserva do médico para criar elementos de exibição
         reservasMedico.forEach(reserva => {
             // Encontra o índice da reserva na lista geral de reservas para uso em edição
             const index = reservas.findIndex(r =>
