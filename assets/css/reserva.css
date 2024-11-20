@@ -178,15 +178,19 @@ select, input[type="text"] {
 
 button {
     padding: 10px 15px; /* Espaçamento interno do botão */
-    border: none; /* Sem borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    background-color: #4CAF50; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: var(--verde); /* Cor de fundo do botão */
+    color: var(--branco); /* Cor do texto */
+    border: 2px solid #ffffff;
     cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: 0.3s all;
 }
 
 button:hover {
-    background-color: #45a049; /* Cor do botão ao passar o mouse */
+    background-color: #ffffff; /* Cor do botão ao passar o mouse */
+    color: var(--verde);
+    border: 2px solid var(--verde);
+    transition: 0.3s all;
 }
 
 #minhasReservas {
