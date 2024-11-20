@@ -23,14 +23,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Lista de horários disponíveis para diferentes tipos de consultas
     const horariosLivres = {
-        "Oftalmologia": ["09:00", "10:00", "11:00", "14:00"],
-        "Cardiologia": ["09:00", "10:00", "11:00", "15:00", "16:00"],
-        "Obstetricia": ["09:00", "10:00", "11:00", "15:00", "16:00"],
-        "Dermatologia": ["09:00", "10:00", "11:00", "15:00", "16:00"],
-        "Ortopedia": ["09:00", "10:00", "11:00", "15:00", "16:00"],
-        // Precisamos colocar mais especialidades e mais horários.
+        "Oftalmologia": ["09:00", "10:00", "11:00","13:00", "16:00" , "17:00"],
+        "Cardiologia": ["09:00", "10:00", "11:00","13:00", "16:00" , "17:00"],
+        "Obstetricia": ["09:00", "10:00", "11:00","13:00", "16:00" , "17:00"],
+        "Dermatologia": ["09:00", "10:00", "11:00","13:00", "16:00" , "17:00"],
+        "Ortopedia": ["09:00", "10:00", "11:00","13:00", "16:00" , "17:00"],
+        "Pediatria": ["09:00", "10:00", "11:00","13:00", "16:00" , "17:00"],
+        "Endocrinologia": ["09:00", "10:00", "11:00","13:00", "16:00" , "17:00"],
+        "Ginecologia": ["09:00", "10:00", "11:00","13:00", "16:00" , "17:00"],
+        "Neurologia": ["09:00", "10:00", "11:00","13:00", "16:00" , "17:00"],
+        "Gastroenterologia": ["09:00", "10:00", "11:00","13:00", "16:00" , "17:00"],
+        "Psiquiatria": ["09:00", "10:00", "11:00","13:00", "16:00" , "17:00"],
+        "Reumatologia": ["09:00", "10:00", "11:00","13:00", "16:00" , "17:00"],
+        "Urologia": ["09:00", "10:00", "11:00","13:00", "16:00" , "17:00"],
+        "Otorrinolaringologia": ["09:00", "10:00", "11:00","13:00", "16:00" , "17:00"],
+        "Hematologia": ["09:00", "10:00", "11:00","13:00", "16:00" , "17:00"],
+        "Nefrologia": ["09:00", "10:00", "11:00","13:00", "16:00" , "17:00"]
     };
-    console.log(horariosLivres["Oftalmologia"]); // Exibe os horários de 'Oftalmologia' no console para verificação
 
     // Função que exibe o formulário de reserva e configura os eventos relacionados
     function exibirFormularioDeReserva() {
