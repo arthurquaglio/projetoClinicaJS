@@ -17,6 +17,19 @@ function cadastrarMedico(nome, email, senha, especialidade) {
 }
 
 // Chamadas da função para cadastrar médicos manualmente.
-cadastrarMedico('Dr. João Silva', 'joao@clinica.com', 'senha123', 'Cardiologia');
-cadastrarMedico('Dra. Maria Oliveira', 'maria@clinica.com', 'senha123', 'Dermatologia');
-// Precisa Cadastrar mais medicossss um para cada especialidade.
+cadastrarMedico('Dr. Maria Almeida', 'maria.oftalmologia@clinica.com', 'senha123', 'Oftalmologia');
+cadastrarMedico('Dr. João Silva', 'joao.cardiologia@clinica.com', 'senha123', 'Cardiologia');
+cadastrarMedico('Dr. Pedro Santos', 'pedro.obstetricia@clinica.com', 'senha123', 'Obstetricia');
+cadastrarMedico('Dr. Ana Costa', 'ana.dermatologia@clinica.com', 'senha123', 'Dermatologia');
+cadastrarMedico('Dr. Lucas Oliveira', 'lucas.ortopedia@clinica.com', 'senha123', 'Ortopedia');
+cadastrarMedico('Dr. Beatriz Souza', 'beatriz.pediatria@clinica.com', 'senha123', 'Pediatria');
+cadastrarMedico('Dr. Felipe Andrade', 'felipe.endocrinologia@clinica.com', 'senha123', 'Endocrinologia');
+cadastrarMedico('Dr. Clara Rodrigues', 'clara.ginecologia@clinica.com', 'senha123', 'Ginecologia');
+cadastrarMedico('Dr. Bruno Ribeiro', 'bruno.neurologia@clinica.com', 'senha123', 'Neurologia');
+cadastrarMedico('Dr. Julia Ferreira', 'julia.gastroenterologia@clinica.com', 'senha123', 'Gastroenterologia');
+cadastrarMedico('Dr. Rafael Mendes', 'rafael.psiquiatria@clinica.com', 'senha123', 'Psiquiatria');
+cadastrarMedico('Dr. Camila Lima', 'camila.reumatologia@clinica.com', 'senha123', 'Reumatologia');
+cadastrarMedico('Dr. Gabriel Martins', 'gabriel.urologia@clinica.com', 'senha123', 'Urologia');
+cadastrarMedico('Dr. Daniela Pereira', 'daniela.otorrino@clinica.com', 'senha123', 'Otorrinolaringologia');
+cadastrarMedico('Dr. Henrique Barbosa', 'henrique.hematologia@clinica.com', 'senha123', 'Hematologia');
+cadastrarMedico('Dr. Fernanda Carvalho', 'fernanda.nefrologia@clinica.com', 'senha123', 'Nefrologia');
