@@ -45,10 +45,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Cria um elemento de div para exibir os detalhes da reserva
             const divReserva = document.createElement('div');
+            divReserva.className = 'reservas';
             divReserva.textContent = `Paciente: ${reserva.nomePaciente} - ${reserva.tipoConsulta} - ${reserva.horario} em ${reserva.dataReserva}`;
 
             // Cria um botão de edição e define seu evento de clique
             const btnEditar = document.createElement('button');
+            btnEditar.className = 'buttonsMedico';
             btnEditar.textContent = 'Editar';
             btnEditar.addEventListener('click', function() {
                 editarReserva(reserva, index);
@@ -56,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Cria um botão de exclusão e define seu evento de clique
             const btnExcluir = document.createElement('button');
+            btnExcluir.className = 'buttonsMedico';
             btnExcluir.textContent = 'Excluir';
             btnExcluir.addEventListener('click', function() {
                 excluirReserva(reserva);

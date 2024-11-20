@@ -11,10 +11,31 @@
     <script src="https://kit.fontawesome.com/62a22bf4de.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<!--header-->
+<header>
+    <nav>
+        <div class="title">
+            <h1 class="subtitle_1">+life</h1>
+            <h1 class="subtitle_2">Clínica</h1>
+        </div>
+        <ul class="nav-menus">
+            <div class="menus">
+                <li> <a href= "index.html" class="buttons"> Home </a> </li>
+                <li> <a href= "about.html" class="buttons"> About </a> </li>
+                <li> <a onclick="scrollToFooter()" class="buttons"> Contact</a> </li>
+            </div>
+
+            <li> <a href= "login.html"> <button class="button_login">Login</button> </a> </li>
+        </ul>
+    </nav>
+</header>
+
+<!--main-->
 <h2>Reservar Consulta</h2>
 <form id="formReserva">
     <label for="tipoConsulta">Tipo de Consulta:</label>
     <select id="tipoConsulta" required>
+        <option value="">Selecione a Especialidade</option>
         <option value="Oftalmologia">Oftalmologia</option>
         <option value="Cardiologia">Cardiologia</option>
         <option value="Obstetricia">Obstetrícia</option>
@@ -51,6 +72,9 @@
 
 <script src="assets/js/reservas.js"></script>
 <script>
+    function scrollToFooter() {
+        document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
+    }
 
     document.addEventListener('DOMContentLoaded', function() {
 
@@ -62,7 +86,7 @@
 </script>
 </body>
 <!--footer-->
-<footer>
+<footer id="footer">
     <div id="footer_content">
         <div id="footer_contacts">
             <h1>+life</h1>
